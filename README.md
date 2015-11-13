@@ -1,39 +1,48 @@
 # HAMMAM
 
-A tiny SPA (Single Page Application) framework for the Web,<br>
-Ultralight, for all modern browsers and devices, and with a native feel,<br>
-Full HTML5/CSS/JS, and requiring no server configuration.
+HAMMAM is a tiny SPA (Single Page Application) framework,<br>
+Lightweight, standalone, full-featured, and compatible with all modern browsers and devices (plus IE9).
 
 ## Features
 
 
-### Component
+### Component-based
 
-- The page is built with "components" having their own HTML, CSS, JS, including data and event listeners.
-- Simple configuration, composition and inheritence between components.
-- Components can inherit from the declaration of other components, and overload them freely. 
-- Components can contain one or many other components, or componentsLists (groups of N components using a similar structure)
-- Components can add, remove or replace themselves or their children.
+- The SPA is built with "components" having their own HTML, CSS and JS.
+- Components can be easily configured and have their own functions.
+- They can inherit from the declaration of another component, and overload it. 
+- They can contain other components, or componentsLists (groups of N components using a similar structure)
+- They can add, remove or replace themselves or their children.
 - ComponentsLists can also be reordered.
-- Simple API for accessing any component of the page as well as its data and functions from anywhere.
 
-### State, data and models
+(see more)
 
-- Components have a "state" defining their behavior and a "dataset" defining their content.
-- Models help components fill their dataset using static data, localStorage, JSON files, AJAX calls, etc.
+### State and data
+
+- Components have a "state" property defining their behavior.
+- They also have a "dataset" property defining their content.
+
+(see more)
+
 
 ### Templating
 
-- Views are regular HTML with "mustache" features meant to ease the use of datasets, if's, loops, etc.
-- They can be executed at runtime or built with Node for more speed.
+- Components are displayed using templates.
+- Templates are regular HTML files, except they can use "mustaches" to perform tests, loops, access the component's data, execute JS code, etc.
+
+(see more)
 
 ### URL & routing
 
-- Simple API for getting and setting folder, page, GET parameters and hash
-- Clean browser history
+- The built-in URL engine allows to get and set URL's content, parameters and hash easily.
+- The built-in router allows to display a given "page" depending on the current URL.
+- Using the History API (polyfilled for IE9), HAMMAM avoid page reloads and keeps a clean browser history.
+
+(see more)
 
 ### Notifications & errors
 
+?
 
 ### Events
 
@@ -54,6 +63,3 @@ Full HTML5/CSS/JS, and requiring no server configuration.
 
 
 ### Accessibility & SEO
-
-
-<!-- osef -->
