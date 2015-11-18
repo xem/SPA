@@ -13,6 +13,7 @@ Lightweight, standalone, full-featured, and compatible with all modern browsers 
 - Components can be easily configured and have their own state, data and methods.
 - They can instanciate and contain any other component.
 - They can add, remove or replace themselves or their children.
+- Code can be executed when templates are created or removed
 
 
 (see more)
@@ -22,6 +23,7 @@ Lightweight, standalone, full-featured, and compatible with all modern browsers 
 
 - Components are displayed using templates.
 - Templates are regular HTML files, except they can use "mustaches" to perform tests, loops, translations, access the component's data, execute JS code, etc.
+- Templates can be redrawn after changing their component's state or data
 
 (see more)
 
@@ -45,5 +47,6 @@ Lightweight, standalone, full-featured, and compatible with all modern browsers 
 ### Internationalization
 
 - Translations are read directly from your PO files
+- Fallback language(s) can be chosen for each language, to handle missing translations
 
 (see more)
