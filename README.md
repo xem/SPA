@@ -50,3 +50,9 @@ Lightweight, standalone, full-featured, and compatible with all modern browsers 
 - Fallback language(s) can be chosen for each language, to handle missing translations
 
 (see more)
+
+### Versioning, caching and data persistence
+
+- App's assets are reloaded after a version bump
+- Data persistence uses localStorage
+- Update scripts can be used to seamlessly update the localStorage model if it changed between two versions
