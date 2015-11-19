@@ -5,7 +5,7 @@ They contain:
 - a file called component.js. Ex:
 
 ````js
-Hammam.addComponent("componentName",
+SPA.addComponent("componentName",
   {
     
   }
