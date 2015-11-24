@@ -39,6 +39,7 @@ Lightweight, standalone, full-featured, and compatible with all modern browsers 
 
 - SPA eases the listening of events in each component, directly from the HTML or from the JS code.
 - Form submits are catched and sent via AJAX requests.
+- Automatic XSS prevention
 
 ([see more](events.md))
 
