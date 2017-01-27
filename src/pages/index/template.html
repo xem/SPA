@@ -1,0 +1,23 @@
+<div class="app">
+  <h1>Title</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+  <p>Here's some JS: (see console) {{ console.log("JS in mustaches:" + Math.random()); }}</p>
+  <p>Here's some JS in a script tag: (see console) <script>console.log("JS in script tag:" + Math.random());</script></p>
+  <script>var r = Math.random();</script>
+  <p>Here's a random number: {{= r }}</p>
+  <p>Here's a translated string: {{= _("Hi", "example") }}</p>
+  <p>Here's a var from it: {{= it.data.answer }}</p>
+  <p>Here's a conditional output (if): random number is {{? r < 0.5 }} not {{?}} big
+  <p>Here's a conditional output (if/else): random number is {{? r < 0.5 }} small {{??}} big {{?}}
+  <p>Here's a conditional output (if/elseif/else): random number is {{? (r < 0.33) }} small {{?? (r > 0.66) }} big {{??}} medium {{?}}
+  <script>var testarray = ["a","b","c"];</script>
+  <p>Here's a loop on an array ["a","b","c"]: {{~ testarray:value1:index1 }} {{= "value at index " + index1 + " is " + value1 }} ; {{~}}
+  <script>var testobject = {"a": "aaa","b": "bbb","c": "ccc"};</script>
+  <p>Here's a loop on an object {"a": "aaa","b": "bbb","c": "ccc"}: {{~ testobject : value2 : index2 }} {{= "value at index " + index2 + " is " + value2 }} ; {{~}}
+  <p>Here's a subcomponent: (footer. TODO)</p>
+  <div class="footer"></div>
+  
+  <br><br>
+  
+  <a href="#/contact">go to page contact</a>
+</div>

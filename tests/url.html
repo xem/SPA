@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <title>Example</title>
+</head>
+<body id="top">
+  <noscript>
+    Please enable JavaScript
+  </noscript>
+  
+  
+  <a href="..">home</a>
+  
+  
+  <script src="../spa/spa.js"></script>
+  <script src="../spa/url.js"></script>
+  <script>
+
+    location.hash = "";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "#/";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/page";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/?test=1";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/?toto=tata&test=2";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/#hash";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/page?test=1";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/page?toto=tata&test=2";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/page?toto=tata&test=2#hash";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/page?test=1#hash";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+        
+    location.hash = "/page#hash";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+
+    location.hash = "/?test=1#hash";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+    
+    location.hash = "/?toto=tata&test=2#hash";
+    console.log("===");
+    console.log("URL: " + location.hash);
+    console.log("page name: " + SPA.URL.getPage());
+    console.log("GET test: " + SPA.URL.getGET("test"));
+    console.log("hash: " + SPA.URL.getHash());
+
+  </script>
+</body>
+</html>

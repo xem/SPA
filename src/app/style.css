@@ -1,0 +1,7 @@
+.app {
+  background: black;
+}
+
+.app * {
+  color: white;
+}
